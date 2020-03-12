@@ -1,0 +1,401 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+
+  a {
+    text-decoration: none;
+    color: #389dee;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  // HEADER START
+  header {
+    background: #3b5998;
+    color: white;
+    padding: 15px;
+
+    a {
+      color: white;
+      font-weight: 300;
+    }
+
+    .logo-area {
+      text-transform: uppercase;
+      font-size: 20px;
+      display: inline-block;
+      // background: red;
+      margin-right: -5px;
+      width: 20%;
+    }
+
+    .menu {
+      display: inline-block;
+      // background: red;
+      margin-right: -5px;
+      width: 20%;
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+      text-align: right;
+      padding-right: 20px;
+      font-size: 14px;
+
+      ul li {
+        display: inline-block;
+      }
+
+      a {
+        margin-right: 20px;
+      }
+    }
+
+    .icon-links {
+      display: inline-block;
+      width: 20%;
+      padding-left: 40px;
+      // background: red;
+      font-size: 14px;
+
+      ul li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .quick-options {
+        display: inline-block;
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+        padding-right: 20px;
+      }
+
+      .privacy {
+        display: inline-block;
+        padding-left: 20px;
+      }
+    }
+
+    .search-area {
+      display: inline-block;
+      width: 40%;
+      // background: red;
+      margin-right: -5px;
+      text-align: right;
+      font-size: 14px;
+
+      ul li {
+        display: inline-block;
+      }
+    }
+  }
+  // HEADER END
+  // TOP-AREA START
+
+  #top-area {
+    padding: 200px 15px 90px 15px;
+    background: url("../img/background.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .profile-info {
+      .user-img {
+        padding: 10px;
+        display: inline-block;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+      .user-details {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 60px;
+        padding-left: 20px;
+
+        h3 {
+          color: white;
+          font-size: 24px;
+          font-weight: 300;
+          margin-bottom: 8px;
+        }
+
+        a {
+          display: inline-block;
+          margin-left: -4px;
+          margin-right: 5%;
+          width: 45%;
+          text-align: center;
+          text-transform: uppercase;
+          background: rgba(255, 255, 255, 0.3);
+          transition: background 0.4s ease-in;
+          color: white;
+          font-size: 10px;
+          padding: 10px;
+          border-radius: 3px;
+
+          &:hover {
+            background: #389dee;
+          }
+        }
+      }
+    }
+  }
+  // TOP AREA END
+  //CONTENT AREA START
+  #content-area {
+    background: #fafafa;
+    overflow: auto;
+    padding: 50px 0;
+
+    .side-column {
+      float: left;
+      width: 35%;
+      margin-right: 2.5%;
+      margin-left: 2.5%;
+      max-width: 380px;
+    }
+
+    .widget-box {
+      padding: 15px;
+      background: white;
+      margin: 0 0 15px 0;
+      border-radius: 3px;
+      -webkit-box-shadow: 0px 4px 8px -2px rgba(125, 125, 125, 1);
+      -moz-box-shadow: 0px 4px 8px -2px rgba(125, 125, 125, 1);
+      box-shadow: 0px 4px 8px -2px rgba(125, 125, 125, 1);
+      overflow: auto;
+
+      .head {
+        .widget-icon-container {
+          display: inline-block;
+        }
+        .widget-icon {
+          background: #bfbfbf;
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .fas {
+            max-width: 50%;
+            font-size: 20px;
+          }
+        }
+        .widget-title {
+          display: inline-block;
+          padding-left: 10px;
+        }
+      }
+
+      .img {
+        float: left;
+        width: 33.33%;
+        height: 110px;
+        background: url("../img/background.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+    }
+    .body {
+      padding: 20px 0;
+
+      h6 {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .main-area {
+    float: left;
+    width: 55%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+
+    .submenu {
+      padding: 0;
+      margin: 0 0 20px 0;
+      background: white;
+      border-radius: 3px;
+      -webkit-box-shadow: 0px 4px 8px -2px rgba(125, 125, 125, 1);
+      -moz-box-shadow: 0px 4px 8px -2px rgba(125, 125, 125, 1);
+      box-shadow: 0px 4px 8px -2px rgba(125, 125, 125, 1);
+      overflow: auto;
+
+      span {
+        display: block;
+        margin-top: 15px;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+
+      ul {
+        padding: 0;
+
+        li {
+          margin-right: -5px;
+          display: inline-block;
+          padding: 10px;
+          width: 20%;
+          text-align: center;
+          border-bottom: 3px solid #fff;
+          transition: all 0.4s ease-in-out;
+          cursor: pointer;
+
+          .fas,
+          .far {
+            font-size: 20px;
+          }
+
+          &:hover {
+            border-bottom: 3px solid #389dee;
+            color: #389dee;
+          }
+        }
+      }
+    }
+    .post {
+      .user-img {
+        img {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+        }
+      }
+
+      .head {
+        .user-img {
+          display: inline-block;
+          margin-right: 10px;
+        }
+
+        .post-info {
+          display: inline-block;
+          vertical-align: top;
+          width: 80%;
+
+          .user-info {
+            display: block;
+            font-size: 14px;
+            margin: 4px 0 6px 0;
+          }
+          .post-date {
+            display: block;
+            font-size: 12px;
+            color: #afafaf;
+          }
+        }
+      }
+
+      .body {
+        .post-img {
+          img {
+            width: 100%;
+          }
+        }
+        .top-icons {
+          color: #afafaf;
+          display: inline-block;
+          padding: 10px;
+          width: 100%;
+
+          .fas {
+            font-size: 20px;
+          }
+
+          .fa-thumbs-up {
+            margin-right: 15px;
+          }
+
+          .comment-icon-container {
+            float: right;
+          }
+        }
+        .post-comments {
+          background: #eaeaea;
+          margin-left: -15px;
+          margin-right: -15px;
+          padding: 15px;
+          .post-user {
+            display: inline-block;
+            margin-right: 10px;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: url("../img/post-user.jpg") no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+          }
+          .comments-info {
+            display: inline-block;
+            vertical-align: top;
+            width: 87%;
+            font-size: 14px;
+
+            .time {
+              color: #afafaf;
+              font-size: 10px;
+              float: right;
+            }
+          }
+        }
+        p {
+          padding: 0;
+          margin-top: 10px;
+        }
+        .post-form {
+          margin-top: 15px;
+          width: 100%;
+          .user-img {
+            display: inline-block;
+            margin-right: 10px;
+          }
+          .form-info {
+            display: inline-block;
+            vertical-align: top;
+            width: 89%;
+            font-size: 14px;
+            border-bottom: solid #eaeaea;
+            
+          }
+          input {
+            display: inline-block;
+            width: 80%;
+            border: 0 solid white;
+            padding: 10px;
+            font-size: 18px;
+
+            &:focus {
+              outline: none;
+            }
+          }
+          .icons {
+            float: right;
+            color: #afafaf;
+            width: 15%;
+            padding: 10px;
+
+            .fas,
+            .far {
+              font-size: 20px;
+              
+            }
+            .fa-smile {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+  }
+}
